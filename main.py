@@ -1,4 +1,4 @@
-print("welcome to the data analayzer and transformer program! ")
+print("Welcome to the data analayzer and transformer program! ")
 data=[]
 def input_data():
     """Take 1D array input from the user and store the data."""
@@ -85,27 +85,16 @@ def sort_data():
     else:
         print("Invalid sorting choice!")
     
-def dataset_statistics(data):
+def dataset_statistics(*data):
     """Return minimum, maximum, sum and average as multiple values."""
     minimum = min(data)
     maximum = max(data)
     total = sum(data)
     average = total / len(data)
+    
     return minimum, maximum, total, average
 
-def display_dataset_statistics():
-    """Display dataset statistics using the dataset_statistics function."""
-    if len(data) == 0:
-        print("No data found!")
-        return
     
-    minimum, maximum, total, average = dataset_statistics(data)
-    
-    print("\nDataset Statistics:")
-    print("Minimum Value:", minimum)
-    print("Maximum Value:", maximum)
-    print("Sum of Values:", total)
-    print("Average Value:", round(average, 2))
 
 while True :
     print("\nSelect option :")
@@ -146,8 +135,15 @@ while True :
         sort_data()
 
     elif choice == 6:
-        print(display_dataset_statistics.__doc__)
-        display_dataset_statistics()
+        print(dataset_statistics.__doc__)
+        minimum, maximum, total, average = dataset_statistics(*data)
+            
+        print("\nDataset Statistics:")
+        print(f"Minimum Value: {minimum}")
+        print(f"Maximum Value:{maximum}")
+        print(f"Sum of Values: {total}")
+        print(f"Average Value: {round(average, 2)}")
+
         
     elif choice == 7 :
         print("Exiting!\nThank You For Using Data Analyzer And Transformer Program")
