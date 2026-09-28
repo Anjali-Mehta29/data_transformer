@@ -30,6 +30,7 @@ The program continues displaying the menu until the user chooses the Exit option
 * Displays an interactive menu.
 * Allows the user to input data for a 1D array.
 * Allows the user to input data for a 2D array.
+* Uses docstrings (__doc__) to provide documentation for functions.
 * Displays the total number of elements.
 * Displays the minimum and maximum values.
 * Calculates the sum and average of the dataset.
@@ -38,6 +39,7 @@ The program continues displaying the menu until the user chooses the Exit option
 * Uses a lambda function for filtering data.
 * Sorts data in ascending order.
 * Sorts data in descending order.
+* Uses *args to accept a variable number of arguments.
 * Displays dataset statistics.
 * Uses multiple return values.
 * Uses conditional statements for different operations.
@@ -52,11 +54,13 @@ The program continues displaying the menu until the user chooses the Exit option
 * If, elif, and else statements.
 * For and while loops.
 * Functions.
+* Function documentation using docstrings (__doc__).
 * Recursion.
 * Lambda functions.
 * Filter function.
 * Map function.
 * Sorting.
+* Variable-length arguments using *args.
 * Built-in functions.
 * Multiple return values.
 * Global variables.
@@ -115,10 +119,12 @@ By completing this project, you can learn:
 * How to create and call functions.
 * How to use built-in Python functions.
 * How to calculate basic statistics from data.
+* How to use docstrings and access them using __doc__.
 * How to use lambda functions.
 * How to use the filter() function.
 * How to sort data using the sorted() function.
 * How to implement recursion in Python.
+* How to use *args to pass a variable number of arguments to a function.
 * How to return multiple values from a function.
 * How to create a menu-driven Python program.
 * How to perform basic data analysis and transformation.
