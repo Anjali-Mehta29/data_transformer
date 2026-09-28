@@ -117,7 +117,7 @@ while True :
     print("6.Display Dataset Statistics (Return Multiple Values)")
     print("7.Exit")
 
-    choice=int(input("enter your choicee :"))
+    choice=int(input("enter your choice :"))
 
     if choice == 1 :
         print(input_data.__doc__)
